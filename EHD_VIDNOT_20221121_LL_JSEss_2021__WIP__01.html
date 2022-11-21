@@ -366,6 +366,14 @@ code {
     });
   </script>
 <link rel="stylesheet" href="css/ehd-course-notes.css" />
+<style>
+.error {
+	color: brown;
+	font-weight: bold;
+	background: pink;
+	padding: 2rem;
+}
+</style>
 <h1 id="course-notes">COURSE NOTES</h1>
 <h3 id="span-class%22course-title%22javascript-essential-training-2021span"><span class="course-title">JavaScript Essential Training (2021)</span></h3>
 <h2 id="course-info">COURSE INFO</h2>
@@ -444,7 +452,7 @@ code {
 <li>N/A</li>
 </ul>
 <h2 id="instructor">Instructor</h2>
-<h2 style="color: brown; background: pink; padding: 2em;">INSTRUCTOR INFO  GOES HERE</h2>
+<h2 class="error">INSTRUCTOR INFO  GOES HERE</h2>
 <h2 id="end-01---intro-page">--- [END 01 - Intro Page] ---</h2>
 <h2 id="toc">TOC</h2>
 <pre class="hljs"><code><div>
@@ -557,122 +565,406 @@ code {
 <h2 id="end-02---toc">--- [END 02 - TOC]</h2>
 <h2 id="videos">VIDEOS</h2>
 <h3 id="0-introduction">0. Introduction</h3>
-<pre><code>#### 0.0 JavaScript: The soil from which the modern web grows
-#### 0.1 How to use the exercise files
-</code></pre>
+<h4 id="00-javascript-the-soil-from-which-the-modern-web-grows">0.0 JavaScript: The soil from which the modern web grows</h4>
+<ul>
+<li>The modern web runs on JavaScript</li>
+<li>Foundational elements of JS</li>
+<li>JAMstack</li>
+<li>HTML is language of web content, CSS is language of web style, JS is language the binds it all together</li>
+<li>This course deep understanding of modern JS</li>
+<li>JS primary lang for everything we do on web</li>
+</ul>
+<h4 id="01-how-to-use-the-exercise-files">0.1 How to use the exercise files</h4>
+<ul>
+<li>Ex files avail from GitHub</li>
+<li>Folder with e suffix represent the end state</li>
+<li>PDF attached</li>
+<li>Link to doc or code refs in many exercise files</li>
+</ul>
 <h3 id="1-javascript-a-brief-introduction">1. JavaScript: A Brief Introduction</h3>
-<pre><code>#### 1.0 JavaScript: First contact
-#### 1.1 Navigating the JS landscape
-#### 1.2 Tools for working with JavaScript
-#### 1.3 Linting and formatting
-#### 1.4 Get to know the browser console
-#### 1.5 JavaScript language basics
-#### 1.6 Learning JavaScript backward
-#### 1.7 Chapter Quiz
-</code></pre>
+<h4 id="10-javascript-first-contact">1.0 JavaScript: First contact</h4>
+<ul>
+<li>A new era of web dev</li>
+<li>JS on browser, server, localhost</li>
+</ul>
+<!-- H5 will represent slides in many cases-->
+<h5 id="apply-practical-skils">Apply practical skils</h5>
+<ul>
+<li>
+<p>Modern JS &amp; tooling</p>
+</li>
+<li>
+<p>JSX &amp; Typescript</p>
+</li>
+<li>
+<p>Frameworks</p>
+</li>
+<li>
+<p>We are going to start with complex and then break it down</p>
+</li>
+<li>
+<p>Typical react component is long and complex</p>
+</li>
+</ul>
+<h5 id="jsx">JSX</h5>
+<ul>
+<li>
+<p>A syntax extension of JS created for the React JS framework</p>
+</li>
+<li>
+<p>If I'm going to learn React should I just learn JSX?</p>
+</li>
+<li>
+<p>NO! JSX is an extension, so you still need basics</p>
+</li>
+<li>
+<p>If you undestand the basics you will be able to quickly pickup JSX and other JS flavors</p>
+</li>
+</ul>
+<h5 id="components">Components</h5>
+<ul>
+<li>
+<p>Objects</p>
+</li>
+<li>
+<p>Methods</p>
+</li>
+<li>
+<p>Functions</p>
+</li>
+<li>
+<p>Template Literals</p>
+</li>
+<li>
+<p>Arrays</p>
+</li>
+<li>
+<p>At end of course we will return to this component and you will be able to make sense of it</p>
+</li>
+</ul>
+<h4 id="11-navigating-the-js-landscape">1.1 Navigating the JS landscape</h4>
+<ul>
+<li>
+<p>Overwhelmed by that all the JS flavors</p>
+</li>
+<li>
+<p>Vanilla Javascript</p>
+</li>
+<li>
+<p>ES2015</p>
+</li>
+<li>
+<p>Babel</p>
+</li>
+<li>
+<p>React</p>
+</li>
+<li>
+<p>Vue.js</p>
+</li>
+<li>
+<p>ECMAScript</p>
+</li>
+<li>
+<p>CoffeScript</p>
+</li>
+<li>
+<p>JSX</p>
+</li>
+<li>
+<p>TypeScript</p>
+</li>
+<li>
+<p>Angular</p>
+</li>
+<li>
+<p>ES6</p>
+</li>
+<li>
+<p>WebPack</p>
+</li>
+<li>
+<p>Node.js</p>
+</li>
+<li>
+<p>Gulp</p>
+</li>
+<li>
+<p>JS is constantly evolving</p>
+</li>
+</ul>
+<h5 id="mortens-incomplete-guide-to-navigating-the-js-landscape">Morten's Incomplete Guide to Navigating the JS Landscape:</h5>
+<ul>
+<li>
+<p>Javascript: the core lang; sometimes referred to as vanilla JS</p>
+</li>
+<li>
+<p>This is what we will cover in this course</p>
+</li>
+<li>
+<p>ECMAScript: browser specification of the JS lang. not the lang itself, but official description of how the lang should be interpreted by browsers</p>
+</li>
+<li>
+<p>Cutting edge</p>
+</li>
+<li>
+<p>Babel.js: Use to convert modern JS into plain JS the browser can read</p>
+</li>
+<li>
+<p>JS is an opinionated coding lang</p>
+</li>
+<li>
+<p>TypeScript: variation, dialect, or flavor of JS introducing features like <strong>strong typing</strong></p>
+</li>
+<li>
+<p>Abstracted versions of JS with additional features.</p>
+</li>
+<li>
+<p>.ts ext</p>
+</li>
+<li>
+<p>CoffeeScript: another dialect of JS</p>
+</li>
+<li>
+<p>React, Vue, Angular: JS frameworks allowing us to write JS-based font-end apps. Adds abstraction layer on top of JS</p>
+</li>
+<li>
+<p>Introduce new coding convention like JSX and reliance on tools like Beble, WebPack, and Node.js</p>
+</li>
+<li></li>
+<li>
+<p>npm, WebPack, Gulp: Build tools and infrastructure to automate the process of optimizing human-readable JavaScript for the best browser performance</p>
+</li>
+<li>
+<p>Node.js: JS server runtime used to run JS everywhere; used to run npm, WebPack, Babel, and more on your computer</p>
+</li>
+</ul>
+<p>TAKEAWAY:</p>
+<ul>
+<li>Learn JS first then optimize and specialize your knowledge</li>
+</ul>
+<h4 id="12-tools-for-working-with-javascript">1.2 Tools for working with JavaScript</h4>
+<ul>
+<li>
+<p>Modern browser: ideally all the browsers for testing (Chrome, Firefox)</p>
+</li>
+<li>
+<p>Code editor: VS Code is becoming industry standard. Highlight code as you work</p>
+</li>
+<li>
+<p>Live server env: extension for VS Code or similar. Efficieny</p>
+</li>
+<li>
+<p>Browser console: included with every browser</p>
+</li>
+<li>
+<p>Live Server (Ritwick Dey)</p>
+</li>
+</ul>
+<h4 id="13-linting-and-formatting">1.3 Linting and formatting</h4>
+<ul>
+<li>Morten is dyslexic</li>
+<li>Code highlighter helps, but other extensions help</li>
+<li>ESLint: helps auto detect coding errors and can do basic cleanup auto</li>
+<li>Prettier: helps auto clean up your formatting</li>
+<li>Both require Node.js (install Node.js via download)</li>
+</ul>
+<h5 id="install-npm">Install NPM</h5>
+<ul>
+<li>Navigate to Terminal install</li>
+<li><code>npm install</code>: node package manager goes on the internet and pulls everything into VS code to get prettier and eslint to work</li>
+<li>With prettier you can set what rules to enforce</li>
+</ul>
+<h4 id="14-get-to-know-the-browser-console">1.4 Get to know the browser console</h4>
+<ul>
+<li>JS doesn't run in the code editor it runs in the browser</li>
+</ul>
+<p>EX: 01_05</p>
+<p>Script.js</p>
+<ul>
+<li>
+<p>Click Go Live at bottom bar of VSCode</p>
+</li>
+<li>
+<p>Go to current folder 01_05</p>
+</li>
+<li>
+<p>Open console</p>
+</li>
+<li>
+<p><code>window.document</code></p>
+</li>
+<li>
+<p><code>backpack</code> hit right key for autocomplete</p>
+</li>
+<li>
+<p><code>backpack.toggleLid(true)</code></p>
+</li>
+<li>
+<p><code>backpack</code>: lid is still set to true</p>
+</li>
+</ul>
+<h4 id="15-javascript-language-basics">1.5 JavaScript language basics</h4>
+<p>EX: 01_06</p>
+<ul>
+<li>Write JS top to bottom</li>
+<li>Define functions top before you use them</li>
+<li>Code comments: green</li>
+<li><strong>JS Doc:</strong> Verbose comment: <code>/**</code> [ENTER]:</li>
+</ul>
+<pre class="hljs"><code><div>/**
+ * function updateBackpack()
+ * Outputs HTML
+ * @param {string} update
+ */
+</div></code></pre>
+<ul>
+<li>
+<p>CTRL + /: quickly comment / uncomment code</p>
+</li>
+<li>
+<p>Whitespace is just for humans. #BESTPRACTICE: Use indentation to indicate visual hierarchy</p>
+</li>
+<li>
+<p>Change Tab indent size by clicking <code>Spaces:2</code> on VSCode bottom bar</p>
+</li>
+<li>
+<p>Semicolons: JS doesn't care if semicolons or not. If anyone tells you it is wrong to do one or the other, it's not true. This is purely developer preference.</p>
+</li>
+<li>
+<p>#BESTPRACTICE: Be consistent with double quotes and single quotes</p>
+</li>
+<li>
+<p>#BESTPRACTICE: Use tools like Prettier and ESLint to automatically enforce that consistency</p>
+</li>
+</ul>
+<h4 id="16-learning-javascript-backward">1.6 Learning JavaScript backward</h4>
+<ul>
+<li>
+<p>When you learn JS for the first time you typically start with the basics.</p>
+</li>
+<li>
+<p>But, due to the popularity of JS frameworks like React an Vue, today the first intro many people have to JS is through <strong>advanced objects and methods</strong>.</p>
+</li>
+<li>
+<p>For this reason, we'll start with objects / methods, then Data Types and DOM, finally functions, methods, events at end.</p>
+</li>
+<li>
+<p>Learning JS requires understing basics and patterns, but also <strong><em>Finding ways to make them make sense to you</em></strong></p>
+</li>
+<li>
+<p>With examples first, you will see the context and then ask why questions</p>
+</li>
+<li>
+<p>Open-ended practice assigments thorughout the course</p>
+</li>
+<li>
+<p>Refer to MDN Web Docs as part of your process</p>
+</li>
+<li>
+<p>Make documentation part of your learing journey</p>
+</li>
+<li>
+<p>Documentation-based process for robust learning</p>
+</li>
+</ul>
+<h4 id="17-chapter-quiz">1.7 Chapter Quiz</h4>
+<p>What is an indicator of someone being a good JavaScript developer?</p>
+<p>They follow standards, invest in learning, use formatting and linting tools for consistency, and write accessible code.</p>
+<h2 class="error">BOOKMARK</h2>
 <h3 id="2-up-and-running-with-js">2. Up and Running with JS</h3>
-<pre><code>#### 2.0 JavaScript in an HTML document
-#### 2.1 JavaScript as an external file
-#### 2.2 Modern JavaScript loading
-#### 2.3 JavaScript modules
-#### 2.4 Chapter Quiz
-</code></pre>
+<h4 id="20-javascript-in-an-html-document">2.0 JavaScript in an HTML document</h4>
+<h4 id="21-javascript-as-an-external-file">2.1 JavaScript as an external file</h4>
+<h4 id="22-modern-javascript-loading">2.2 Modern JavaScript loading</h4>
+<h4 id="23-javascript-modules">2.3 JavaScript modules</h4>
+<h4 id="24-chapter-quiz">2.4 Chapter Quiz</h4>
 <h3 id="3-objects">3. Objects</h3>
-<pre><code>#### 3.0 Objects: A practical introduction
-#### 3.1 JavaScript objects: The code version
-#### 3.2 Object containers
-#### 3.3 Object properties
-#### 3.4 Accessing objects
-#### 3.5 Accessing object properties
-#### 3.6 Practice: Build a new object
-#### 3.7 Object methods
-#### 3.8 Practice: Build a new method
-#### 3.9 Classes: Object blueprints
-#### 3.10 Object constructors
-#### 3.11 Practice: Build a new object with a constructor
-#### 3.12 Global objects
-#### 3.13 Challenge: Create a new object type
-#### 3.14 Solution: Create a new object type
-#### 3.15 Chapter Quiz
-</code></pre>
+<h4 id="30-objects-a-practical-introduction">3.0 Objects: A practical introduction</h4>
+<h4 id="31-javascript-objects-the-code-version">3.1 JavaScript objects: The code version</h4>
+<h4 id="32-object-containers">3.2 Object containers</h4>
+<h4 id="33-object-properties">3.3 Object properties</h4>
+<h4 id="34-accessing-objects">3.4 Accessing objects</h4>
+<h4 id="35-accessing-object-properties">3.5 Accessing object properties</h4>
+<h4 id="36-practice-build-a-new-object">3.6 Practice: Build a new object</h4>
+<h4 id="37-object-methods">3.7 Object methods</h4>
+<h4 id="38-practice-build-a-new-method">3.8 Practice: Build a new method</h4>
+<h4 id="39-classes-object-blueprints">3.9 Classes: Object blueprints</h4>
+<h4 id="310-object-constructors">3.10 Object constructors</h4>
+<h4 id="311-practice-build-a-new-object-with-a-constructor">3.11 Practice: Build a new object with a constructor</h4>
+<h4 id="312-global-objects">3.12 Global objects</h4>
+<h4 id="313-challenge-create-a-new-object-type">3.13 Challenge: Create a new object type</h4>
+<h4 id="314-solution-create-a-new-object-type">3.14 Solution: Create a new object type</h4>
+<h4 id="315-chapter-quiz">3.15 Chapter Quiz</h4>
 <h3 id="4-sidebar-string-output">4. Sidebar: String Output</h3>
-<pre><code>#### 4.0 Mix text and variables with template literals
-#### 4.1 Traditional string output
-#### 4.2 Chapter Quiz
-</code></pre>
+<h4 id="40-mix-text-and-variables-with-template-literals">4.0 Mix text and variables with template literals</h4>
+<h4 id="41-traditional-string-output">4.1 Traditional string output</h4>
+<h4 id="42-chapter-quiz">4.2 Chapter Quiz</h4>
 <h3 id="5-dom">5. DOM</h3>
-<pre><code>#### 5.0 DOM: The Document Object Model
-#### 5.1 Access elements with querySelector methods
-#### 5.2 Access elements using older methods
-#### 5.3 Practice: Find an element
-#### 5.4 Modifying element classes
-#### 5.5 Attributes
-#### 5.6 Inline style
-#### 5.7 Practice: Modify classes and attributes, and styles
-#### 5.8 Add DOM elements
-#### 5.9 Challenge: Add a new element
-#### 5.10 Solution: Add a new element
-#### 5.11 Chapter Quiz
-</code></pre>
+<h4 id="50-dom-the-document-object-model">5.0 DOM: The Document Object Model</h4>
+<h4 id="51-access-elements-with-queryselector-methods">5.1 Access elements with querySelector methods</h4>
+<h4 id="52-access-elements-using-older-methods">5.2 Access elements using older methods</h4>
+<h4 id="53-practice-find-an-element">5.3 Practice: Find an element</h4>
+<h4 id="54-modifying-element-classes">5.4 Modifying element classes</h4>
+<h4 id="55-attributes">5.5 Attributes</h4>
+<h4 id="56-inline-style">5.6 Inline style</h4>
+<h4 id="57-practice-modify-classes-and-attributes-and-styles">5.7 Practice: Modify classes and attributes, and styles</h4>
+<h4 id="58-add-dom-elements">5.8 Add DOM elements</h4>
+<h4 id="59-challenge-add-a-new-element">5.9 Challenge: Add a new element</h4>
+<h4 id="510-solution-add-a-new-element">5.10 Solution: Add a new element</h4>
+<h4 id="511-chapter-quiz">5.11 Chapter Quiz</h4>
 <h3 id="6-sidebar-variables-and-data-types">6. Sidebar: Variables and Data Types</h3>
-<pre><code>#### 6.0 Variables: Containers for everything
-#### 6.1 Var
-#### 6.2 Scope
-#### 6.3 Let
-#### 6.4 Const
-#### 6.5 Data types
-#### 6.6 Assignment vs. comparison
-#### 6.7 Math operators
-#### 6.8 Chapter Quiz
-</code></pre>
+<h4 id="60-variables-containers-for-everything">6.0 Variables: Containers for everything</h4>
+<h4 id="61-var">6.1 Var</h4>
+<h4 id="62-scope">6.2 Scope</h4>
+<h4 id="63-let">6.3 Let</h4>
+<h4 id="64-const">6.4 Const</h4>
+<h4 id="65-data-types">6.5 Data types</h4>
+<h4 id="66-assignment-vs-comparison">6.6 Assignment vs. comparison</h4>
+<h4 id="67-math-operators">6.7 Math operators</h4>
+<h4 id="68-chapter-quiz">6.8 Chapter Quiz</h4>
 <h3 id="7-arrays">7. Arrays</h3>
-<pre><code>#### 7.0 Arrays explained
-#### 7.1 Arrays in code
-#### 7.2 Array methods
-#### 7.3 Challenge: Build and modify an array
-#### 7.4 Solution: Build and modify an array
-#### 7.5 Chapter Quiz
-</code></pre>
+<h4 id="70-arrays-explained">7.0 Arrays explained</h4>
+<h4 id="71-arrays-in-code">7.1 Arrays in code</h4>
+<h4 id="72-array-methods">7.2 Array methods</h4>
+<h4 id="73-challenge-build-and-modify-an-array">7.3 Challenge: Build and modify an array</h4>
+<h4 id="74-solution-build-and-modify-an-array">7.4 Solution: Build and modify an array</h4>
+<h4 id="75-chapter-quiz">7.5 Chapter Quiz</h4>
 <h3 id="8-functions-and-methods">8. Functions and Methods</h3>
-<pre><code>#### 8.0 The real-world function
-#### 8.1 Functions and methods
-#### 8.2 A standard function
-#### 8.3 The arrow function
-#### 8.4 Arrow functions and &quot;this&quot;
-#### 8.5 Practice: Build a function
-#### 8.6 Pass data to a function with parameters
-#### 8.7 Return values from a function
-#### 8.8 Practice: Pass values between functions
-#### 8.9 Callbacks
-#### 8.10 Conditional if...else statement
-#### 8.11 Logical operators
-#### 8.12 Conditional switch statement
-#### 8.13 Looping through content
-#### 8.14 Using the map() array method
-#### 8.15 Challenge: Build an advanced function
-#### 8.16 Solution: Build an advanced function
-#### 8.17 Chapter Quiz
-</code></pre>
+<h4 id="80-the-real-world-function">8.0 The real-world function</h4>
+<h4 id="81-functions-and-methods">8.1 Functions and methods</h4>
+<h4 id="82-a-standard-function">8.2 A standard function</h4>
+<h4 id="83-the-arrow-function">8.3 The arrow function</h4>
+<h4 id="84-arrow-functions-and-%22this%22">8.4 Arrow functions and &quot;this&quot;</h4>
+<h4 id="85-practice-build-a-function">8.5 Practice: Build a function</h4>
+<h4 id="86-pass-data-to-a-function-with-parameters">8.6 Pass data to a function with parameters</h4>
+<h4 id="87-return-values-from-a-function">8.7 Return values from a function</h4>
+<h4 id="88-practice-pass-values-between-functions">8.8 Practice: Pass values between functions</h4>
+<h4 id="89-callbacks">8.9 Callbacks</h4>
+<h4 id="810-conditional-ifelse-statement">8.10 Conditional if...else statement</h4>
+<h4 id="811-logical-operators">8.11 Logical operators</h4>
+<h4 id="812-conditional-switch-statement">8.12 Conditional switch statement</h4>
+<h4 id="813-looping-through-content">8.13 Looping through content</h4>
+<h4 id="814-using-the-map-array-method">8.14 Using the map() array method</h4>
+<h4 id="815-challenge-build-an-advanced-function">8.15 Challenge: Build an advanced function</h4>
+<h4 id="816-solution-build-an-advanced-function">8.16 Solution: Build an advanced function</h4>
+<h4 id="817-chapter-quiz">8.17 Chapter Quiz</h4>
 <h3 id="9-events">9. Events</h3>
-<pre><code>#### 9.0 DOM events explained
-#### 9.1 Typical DOM events
-#### 9.2 Event listeners
-#### 9.3 Practice: Experiment with event listeners
-#### 9.4 Advanced event listeners and &quot;this&quot;
-#### 9.5 Pass arguments through event listeners
-#### 9.6 Challenge: Create an event listener
-#### 9.7 Solution: Create an event listener
-#### 9.8 Chapter Quiz
-</code></pre>
+<h4 id="90-dom-events-explained">9.0 DOM events explained</h4>
+<h4 id="91-typical-dom-events">9.1 Typical DOM events</h4>
+<h4 id="92-event-listeners">9.2 Event listeners</h4>
+<h4 id="93-practice-experiment-with-event-listeners">9.3 Practice: Experiment with event listeners</h4>
+<h4 id="94-advanced-event-listeners-and-%22this%22">9.4 Advanced event listeners and &quot;this&quot;</h4>
+<h4 id="95-pass-arguments-through-event-listeners">9.5 Pass arguments through event listeners</h4>
+<h4 id="96-challenge-create-an-event-listener">9.6 Challenge: Create an event listener</h4>
+<h4 id="97-solution-create-an-event-listener">9.7 Solution: Create an event listener</h4>
+<h4 id="98-chapter-quiz">9.8 Chapter Quiz</h4>
 <h3 id="10-troubleshooting-and-validating-js">10. Troubleshooting and Validating JS</h3>
-<pre><code>#### 10.0 Troubleshooting JavaScript in the browser
-#### 10.1 Making sense of a React component
-#### 10.2 Chapter Quiz
-</code></pre>
+<h4 id="100-troubleshooting-javascript-in-the-browser">10.0 Troubleshooting JavaScript in the browser</h4>
+<h4 id="101-making-sense-of-a-react-component">10.1 Making sense of a React component</h4>
+<h4 id="102-chapter-quiz">10.2 Chapter Quiz</h4>
 <h3 id="11-conclusion">11. Conclusion</h3>
-<pre><code>#### 11.0 Next steps on your learning journey
-#### 11.1 Chapter Quiz
-</code></pre>
+<h4 id="110-next-steps-on-your-learning-journey">11.0 Next steps on your learning journey</h4>
+<h4 id="111-chapter-quiz">11.1 Chapter Quiz</h4>
 <hr>
 <h2 id="resources--reference">RESOURCES &amp; REFERENCE</h2>
 <ul>

@@ -1,4 +1,12 @@
 <link rel="stylesheet" href="css/ehd-course-notes.css" />
+<style>
+.error {
+	color: brown;
+	font-weight: bold;
+	background: pink;
+	padding: 2rem;
+}
+</style>
 
 # COURSE NOTES
 
@@ -46,7 +54,7 @@ JavaScript is a scripting language of the web. As the web evolves from a static 
  - N/A
 
 ## Instructor
-<h2 style="color: brown; background: pink; padding: 2em;">INSTRUCTOR INFO  GOES HERE</h2>
+<h2 class="error">INSTRUCTOR INFO  GOES HERE</h2>
 
 
 
@@ -170,17 +178,196 @@ JavaScript is a scripting language of the web. As the web evolves from a static 
 ## VIDEOS
 
 ### 0. Introduction  
+
  #### 0.0 JavaScript: The soil from which the modern web grows
+
+- The modern web runs on JavaScript
+- Foundational elements of JS
+- JAMstack
+- HTML is language of web content, CSS is language of web style, JS is language the binds it all together
+- This course deep understanding of modern JS
+- JS primary lang for everything we do on web
+
  #### 0.1 How to use the exercise files
+
+- Ex files avail from GitHub
+- Folder with e suffix represent the end state
+- PDF attached
+- Link to doc or code refs in many exercise files
+
 ### 1. JavaScript: A Brief Introduction  
  #### 1.0 JavaScript: First contact
+
+- A new era of web dev
+- JS on browser, server, localhost
+  
+<!-- H5 will represent slides in many cases-->
+##### Apply practical skils
+
+- Modern JS & tooling
+- JSX & Typescript
+- Frameworks
+- We are going to start with complex and then break it down
+
+- Typical react component is long and complex
+
+##### JSX
+
+- A syntax extension of JS created for the React JS framework
+
+
+- If I'm going to learn React should I just learn JSX?
+- NO! JSX is an extension, so you still need basics
+- If you undestand the basics you will be able to quickly pickup JSX and other JS flavors
+
+##### Components
+
+- Objects
+- Methods
+- Functions
+- Template Literals
+- Arrays
+
+- At end of course we will return to this component and you will be able to make sense of it
+
  #### 1.1 Navigating the JS landscape
+
+- Overwhelmed by that all the JS flavors
+- Vanilla Javascript
+- ES2015
+- Babel
+- React
+- Vue.js
+- ECMAScript
+- CoffeScript
+- JSX
+- TypeScript
+- Angular
+- ES6
+- WebPack
+- Node.js
+- Gulp
+
+- JS is constantly evolving
+
+##### Morten's Incomplete Guide to Navigating the JS Landscape:
+
+- Javascript: the core lang; sometimes referred to as vanilla JS
+- This is what we will cover in this course
+
+- ECMAScript: browser specification of the JS lang. not the lang itself, but official description of how the lang should be interpreted by browsers
+- Cutting edge
+  
+- Babel.js: Use to convert modern JS into plain JS the browser can read
+
+- JS is an opinionated coding lang
+
+- TypeScript: variation, dialect, or flavor of JS introducing features like **strong typing**
+- Abstracted versions of JS with additional features.
+- .ts ext
+- CoffeeScript: another dialect of JS
+
+
+- React, Vue, Angular: JS frameworks allowing us to write JS-based font-end apps. Adds abstraction layer on top of JS
+- Introduce new coding convention like JSX and reliance on tools like Beble, WebPack, and Node.js
+- 
+
+- npm, WebPack, Gulp: Build tools and infrastructure to automate the process of optimizing human-readable JavaScript for the best browser performance
+
+- Node.js: JS server runtime used to run JS everywhere; used to run npm, WebPack, Babel, and more on your computer
+
+TAKEAWAY:
+- Learn JS first then optimize and specialize your knowledge
+
  #### 1.2 Tools for working with JavaScript
+
+- Modern browser: ideally all the browsers for testing (Chrome, Firefox)
+- Code editor: VS Code is becoming industry standard. Highlight code as you work
+- Live server env: extension for VS Code or similar. Efficieny
+- Browser console: included with every browser
+
+- Live Server (Ritwick Dey)
+
  #### 1.3 Linting and formatting
+
+- Morten is dyslexic
+- Code highlighter helps, but other extensions help
+- ESLint: helps auto detect coding errors and can do basic cleanup auto
+- Prettier: helps auto clean up your formatting
+- Both require Node.js (install Node.js via download)
+
+##### Install NPM
+
+- Navigate to Terminal install
+- `npm install`: node package manager goes on the internet and pulls everything into VS code to get prettier and eslint to work
+- With prettier you can set what rules to enforce
+
+
  #### 1.4 Get to know the browser console
+
+- JS doesn't run in the code editor it runs in the browser
+
+EX: 01_05
+
+Script.js
+- Click Go Live at bottom bar of VSCode
+- Go to current folder 01_05
+- Open console
+- `window.document`
+
+- `backpack` hit right key for autocomplete
+- `backpack.toggleLid(true)`
+- `backpack`: lid is still set to true
+
  #### 1.5 JavaScript language basics
+
+EX: 01_06
+
+- Write JS top to bottom
+- Define functions top before you use them
+- Code comments: green
+- **JS Doc:** Verbose comment: `/**` [ENTER]:
+
+```
+/**
+ * function updateBackpack()
+ * Outputs HTML
+ * @param {string} update
+ */
+```
+
+- CTRL + /: quickly comment / uncomment code
+
+- Whitespace is just for humans. #BESTPRACTICE: Use indentation to indicate visual hierarchy
+
+- Change Tab indent size by clicking `Spaces:2` on VSCode bottom bar
+
+- Semicolons: JS doesn't care if semicolons or not. If anyone tells you it is wrong to do one or the other, it's not true. This is purely developer preference.
+
+- #BESTPRACTICE: Be consistent with double quotes and single quotes
+- #BESTPRACTICE: Use tools like Prettier and ESLint to automatically enforce that consistency
+
  #### 1.6 Learning JavaScript backward
+
+- When you learn JS for the first time you typically start with the basics.
+- But, due to the popularity of JS frameworks like React an Vue, today the first intro many people have to JS is through **advanced objects and methods**.
+- For this reason, we'll start with objects / methods, then Data Types and DOM, finally functions, methods, events at end.
+- Learning JS requires understing basics and patterns, but also **_Finding ways to make them make sense to you_**
+- With examples first, you will see the context and then ask why questions
+
+- Open-ended practice assigments thorughout the course
+- Refer to MDN Web Docs as part of your process
+- Make documentation part of your learing journey
+- Documentation-based process for robust learning
+
  #### 1.7 Chapter Quiz
+
+What is an indicator of someone being a good JavaScript developer?
+
+They follow standards, invest in learning, use formatting and linting tools for consistency, and write accessible code.
+
+<h2 class="error">BOOKMARK</h2>
+
 ### 2. Up and Running with JS  
  #### 2.0 JavaScript in an HTML document
  #### 2.1 JavaScript as an external file
