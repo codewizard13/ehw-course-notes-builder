@@ -3,7 +3,7 @@ Exercise Files are available on GitHub
 
 - Platform: LinkedIn Learning
 - Course Name: JavaScript Essential Training
-- Course URL: https://www.linkedin.com/learning/javascript-essential-training/javascript-the-soil-from-which-the-modern-web-grows
+- Course URL: https://www.linkedin.com/learning/javascript-essential-training/
 
 ### Instructor
 
