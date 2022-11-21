@@ -16,6 +16,10 @@
 | Date Completed: | --                                                              |
 | File Name:      | EHD_VIDNOT_20221121_LL_JSEss_2021__WIP__01.md                   |
 
+Tag String Links: [[JavaScript](https://www.linkedin.com/learning/search?keywords=JavaScript)]
+
+Tag String Text: `JavaScript`
+
 <!-- SEC: COURSE PREVIEW -->
 |               |                                                   |
 | ------------- | ------------------------------------------------- |
@@ -39,41 +43,10 @@
 JavaScript is a scripting language of the web. As the web evolves from a static to a dynamic environment, technology focus is shifting from static markup and styling—frequently handled by content management systems or automated scripts—to dynamic interfaces and advanced interaction. Once seen as optional, JavaScript is now becoming an integral part of the web, infusing every layer with its script.<br><br>Through practical examples and mini-projects, this course helps you build your understanding of JavaScript piece by piece, from core principles like variables, data types, conditionals, and functions through advanced topics including loops, and DOM scripting. Along the way, instructor Morten Rand-Hendriksen provides challenges that allow you to put your new skills to the test.
 
 ### Learning objectives
-
-- WordPress APIs
-- Action and filter hooks
-- Activating and deactivating plugins
-- Plugin security
-- Creating the directory and files
-- Adding menus and the settings page
-- Inserting custom functionality
-- Including JavaScript and CSS
-- Testing and debugging WordPress plugins
-- Creating widgets
-- Managing users and roles
-- Adding custom post types and taxonomies
-- Working with custom fields and database queries
-- Using APIs: Transients, HTTP, and REST
+ - N/A
 
 ## Instructor
-
-<table class="author-info">
-  <tr style="max-height: 150px;">
-    <td style="vertical-align: top;">
-        <H3>
-            Jeff Starr
-        </H3>
-    </td>
-<td  width="200"  rowspan="2">
-      <img src="img/person-jeff-starr-01.jpg" />
-    </td>
-  </tr>
-  <tr>
-      <td>
-          <a href=" https://www.linkedin.com/learning/instructors/jeff-starr" target="_blank">Jeff Starr: Professional Web Developer and Author with over 15 years of experience</a>
-      </td>
-  </tr>
-</table>
+<h2 style="color: brown; background: pink; padding: 2em;">INSTRUCTOR INFO  GOES HERE</h2>
 
 
 
