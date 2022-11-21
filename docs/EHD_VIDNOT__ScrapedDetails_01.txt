@@ -1,0 +1,31 @@
+Exercise Files are available on GitHub
+## COURSE INFO:
+
+- Platform: LinkedIn Learning
+- Course Name: JavaScript Essential Training
+- Course URL: https://www.linkedin.com/learning/javascript-essential-training/javascript-the-soil-from-which-the-modern-web-grows
+
+### Instructor
+
+- Instructor Name: Morten Rand-Hendriksen
+- Instructor Tagline: Senior Staff Instructor, Speaker, Web Designer, and Software Developer
+- Instructor URL: https://www.linkedin.com/learning/instructors/morten-rand-hendriksen
+- Instructor Avatar URL: https://media-exp1.licdn.com/dms/image/C560DAQGQQYA5mAktCw/learning-author-crop_200_200/0/1576191276160?e=1669647600&v=beta&t=deEWz9V41OHeM0vfnga-3FZ8W_8oG-cFf-v1s4ZKWxw
+
+### Course Details
+
+- Course Duration: 5h 29m
+- Experience Level: Beginner
+- Released: 1/20/2021
+
+### Course Description:
+
+
+<div><div><a href="https://www.linkedin.com/newsletters/6780173704283475968?trk=lil-course-description" target="_blank" class="artdeco-button artdeco-button--1">View Morten's LinkedIn Newsletter</a></div><br>JavaScript is a scripting language of the web. As the web evolves from a static to a dynamic environment, technology focus is shifting from static markup and styling—frequently handled by content management systems or automated scripts—to dynamic interfaces and advanced interaction. Once seen as optional, JavaScript is now becoming an integral part of the web, infusing every layer with its script.<br><br>Through practical examples and mini-projects, this course helps you build your understanding of JavaScript piece by piece, from core principles like variables, data types, conditionals, and functions through advanced topics including loops, and DOM scripting. Along the way, instructor Morten Rand-Hendriksen provides challenges that allow you to put your new skills to the test.</div>
+          
+
+### Skills Covered
+
+Tag String Links: [[JavaScript](https://www.linkedin.com/learning/search?keywords=JavaScript)]
+
+Tag String Text: `JavaScript`

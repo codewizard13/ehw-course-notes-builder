@@ -1,0 +1,47 @@
+0. Introduction
+	0.0 Welcome
+	0.1 How to use the exercise files
+1. First Steps
+	1.0 Course overview
+	1.1 Prepare for development
+	1.2 Explore WordPress plugins
+2. Plugin Basics
+	2.0 Get started
+	2.1 Explore WordPress APIs
+	2.2 Action and filter hooks
+	2.3 Plugin activation and deactivation
+	2.4 Pluggable WordPress functions
+	2.5 Develop secure WordPress plugins
+	2.6 Best practices for plugin development
+3. Building a WordPress Plugin
+	3.0 Create the plugin directory and files
+	3.1 Add administration menus
+	3.2 Add the plugin settings page
+	3.3 Add settings callback functions
+	3.4 Validate plugin settings
+	3.5 Add custom functionality
+	3.6 Include JavaScript and CSS
+	3.7 Plugin internationalization
+	3.8 Add an uninstall feature
+	3.9 Test and debug
+4. Essential Plugin Techniques
+	4.0 Customize the WordPress loop
+	4.1 Create widgets
+	4.2 Manage users and roles
+	4.3 Work with JavaScript and CSS
+	4.4 Use the Options API
+5. Extending Plugin Functionality
+	5.0 Add custom post types and taxonomies
+	5.1 Work with custom fields
+	5.2 Add meta boxes
+	5.3 Work with custom database queries
+	5.4 Integrate admin notices
+6. Advanced Plugin Techniques
+	6.0 Use the Transients API
+	6.1 Use the HTTP API
+	6.2 Use WP-Cron
+	6.3 Implement Ajax
+	6.4 Use the REST API
+	6.5 Develop with Gutenberg
+7. Conclusion
+	7.0 Next steps
