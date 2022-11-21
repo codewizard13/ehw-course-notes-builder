@@ -2,58 +2,33 @@
 
 # COURSE NOTES
 
-### <span class="course-title">WordPress: Plugin Development (2019)</span>
+### <span class="course-title">JavaScript Essential Training (2021)</span>
 
 ## COURSE INFO
 
-| Title:          | WordPress: Plugin Development                                  |
-| --------------- | -------------------------------------------------------------- |
-| URL:            | https://www.linkedin.com/learning/wordpress-plugin-development |
-| Channel:        | LinkedIn Learning                                              |
-| Instructor:     | Jeff Starr                                                     |
-| Update Date:    | August 22, 2019                                                |
-| Date Started:   | 11/03/22                                                       |
-| Date Completed: | --                                                             |
-| File Name:      | EHD_VIDNOT_20221103_LL_WPPluginDev_2019__WIP__01.md            |
+| Title:          | JavaScript Essential Training                                   |
+| --------------- | --------------------------------------------------------------- |
+| URL:            | https://www.linkedin.com/learning/javascript-essential-training |
+| Channel:        | LinkedIn Learning                                               |
+| Instructor:     | Morten Rand-Hendriksen                                          |
+| Release Date:   | 2021-01-20                                                      |
+| Date Started:   | 2022-11-21                                                      |
+| Date Completed: | --                                                              |
+| File Name:      | EHD_VIDNOT_20221121_LL_JSEss_2021__WIP__01.md                   |
 
 <!-- SEC: COURSE PREVIEW -->
-<section class="course-preview">
-	<div>
-		<img
-			class="author-img"
-			src="img/person-jeff-starr-01.jpg"
-		/>
-	</div>
-	<div class="avatar-div">
-		<b>Avatar:</b>
-		<img
-			style="max-width: 64px; margin-top: .5em"
-			src="img/logo-linkedin-learning-01.jpg"
-		/>
-	</div>
-	<div>
-		<img
-			class="course-img"
-			src="img/screen-course-linkedin--wp-plugin-dev-01.jpg"
-			alt="#"
-		/>
-	</div>
-</section>
+|               |                                                   |
+| ------------- | ------------------------------------------------- |
+| Author Image: | ![](img/person-morten-rand-hendriksen-1.jpg)      |
+| Course Thumb: | ![](img/course-thumb-linkedin--js-ess-2021-1.jpg) |
+
 <!-- END SEC: COURSE PREVIEW -->
-
-
-
-## CAVEATS
-
-- N/A
 
 ## COURSE DETAILS
 
-| Course Length:    | 4h 53m                        |
-| ----------------- | ----------------------------- |
-| Level:            | Intermediate                  |
-| Tools & Software: | WordPress, WordPress REST API |
-| Project Name:     | ***Project_Name_Here***       |
+- Course Duration: 5h 29m
+- Experience Level: Beginner
+- Released: 1/20/2021
 
 #### Skills Covered
 
@@ -61,7 +36,7 @@
 
 ### Description:
 
-Is your WordPress website missing something special? Almost any feature you can imagine can be built with WordPress plugins. Learn how to build, extend, and distribute your own plugins with these development techniques, featuring the WordPress API and PHP. Learn how to create menus and a settings page, add custom functionality with JavaScript, and style your plugin with CSS. Discover how to customize the WordPress loop, add custom fields and metaboxes, and work with transients, HTTP, WP Cron, AJAX, the REST API, and Gutenberg. Plus, learn how to adjust roles and permissions to keep your plugins secure.
+JavaScript is a scripting language of the web. As the web evolves from a static to a dynamic environment, technology focus is shifting from static markup and styling—frequently handled by content management systems or automated scripts—to dynamic interfaces and advanced interaction. Once seen as optional, JavaScript is now becoming an integral part of the web, infusing every layer with its script.<br><br>Through practical examples and mini-projects, this course helps you build your understanding of JavaScript piece by piece, from core principles like variables, data types, conditionals, and functions through advanced topics including loops, and DOM scripting. Along the way, instructor Morten Rand-Hendriksen provides challenges that allow you to put your new skills to the test.
 
 ### Learning objectives
 
