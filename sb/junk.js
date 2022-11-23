@@ -1,5 +1,33 @@
-/**
- * function updateBackpack()
- * Outputs HTML
- * @param {string} update
- */
+const backpack = {
+  name: "Everyday Backpack",
+  volume: 30,
+  color: "grey",
+  pocketNum: 15,
+  strapLength: {
+    left: 26,
+    right: 26,
+  },
+  lidOpen: false,
+  toggleLid: function (lidStatus) {
+    this.lidOpen = lidStatus
+  },
+  newStrapLength: function (lengthLeft, lengthRight) {
+    this.strapLength.left = lengthLeft
+    this.strapLength.right = lengthRight
+  },
+}
+
+
+
+
+//
+
+
+
+
+console.log("Strap length L:", backpack.strapLength.left)
+console.log("The pocketNum value:", backpack["pocketNum"])
+
+
+var query = "pocketNum"
+console.log("The pocketNum value:", backpack[query])

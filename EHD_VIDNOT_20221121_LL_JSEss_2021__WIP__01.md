@@ -530,12 +530,187 @@ Modules enable modularization of code where individual functions, components, da
 
 ### 3. Objects  
  #### 3.0 Objects: A practical introduction
+
+- JS is prototype based
+- At core we are working with objects based on prototypes
+- Quickest path to understand JS is understanding what objects are and how they work
+- Object in JS represents object in real life
+
+EX:
+
+- Backpack is an object
+- Pockets, straps, zippers are object properties
+
+- **object properties:** Define the specifics of each unique object
+- Each object is a unique instance of an object prototype.
+
+<blockquote>
+Each object is a unique instance of an object prototype.
+</blockquote>
+
+- A thing is type of object because it shares common properties which define them as belonging to the backpack category
+
+- The particular combination and config of these properties define each individual backpack.
+
+- Changing the property values can create new backpacks
+
+- Prototype based OOP allows us to categorize things by similarities
+- Objects have features that allow us to change their properties (state)
+
+EX: lid can open and close
+
+- **method:** property-changing features inside objects
+- methods act on current object only
+- Objects can contain other objects
+- Objects inside other objects are properties of those objects
+
  #### 3.1 JavaScript objects: The code version
+
+- javascript object: collection of data and functionality stored as properties and methods that describe the object and what it can do
+- To define object / create it: use variable to hold object
+- Modern convention: use `const`
+
+```js
+const backpack = {
+	volume: 30,
+}
+```
+
+- variables hold data
+- curly brackets: say this is a js object
+- properties: key-value pair separated by a colon. Can even be another object or array. can nest sub-objects. separate with comma. convention is put each on own like
+- object can have as many properties as it needs
+- methods: change properties of object. also name-value pairs, but in method the value is a function
+- this: "this" keyword refers to the current object. "This object right here"
+
+EX:
+
+```js
+const backpack = {
+  name: "Everyday Backpack",
+  volume: 30,
+  color: "grey",
+  pocketNum: 15,
+  strapLength: {
+    left: 26,
+    right: 26,
+  },
+  lidOpen: false,
+  toggleLid: function (lidStatus) {
+    this.lidOpen = lidStatus
+  },
+  newStrapLength: function (lengthLeft, lengthRight) {
+    this.strapLength.left = lengthLeft
+    this.strapLength.right = lengthRight
+  },
+}
+```
+
  #### 3.2 Object containers
+
+- const: a variable / container
+
+##### Objects are Typically Constants
+
+- We can change the properties of the object inside the container. We can't remove or replace the object from the container.
+
+EX: 03_03
+
+- Type `backpack` in console
+- Type `backpack = 5`
+
+<aside class="error">
+Uncaught TypeError: Assignment to constant variable. at &lt;anonymous&gt;1:10
+</aside>
+
+- can't change a constant to something entirely different (object to integer, for instance). Properties CAN be changed
+- This way you don't accidentaly destroy your object while working with it
+
  #### 3.3 Object properties
+
+- Defined with colon-separated key-value pair
+- key: any string
+- value: string in quotes, int, float, boolean, array, object
+- prop names: letters, digits, $, _
+- #ROT: use **camelCase** for property names
+
+<aside class="notice rot">
+  <div>
+    <span class="label">#ROT:</span>
+    use camelCase for property names
+  </div>
+</aside>
+
  #### 3.4 Accessing objects
+
+- To access ojbejcts in JS call it by name
+
+EX: 03_05
+
+- Type in console:
+
+```
+backpack
+```
+- Click arrows on object to view properties
+
+##### Console methods
+
+- console.log(): tells browser to print the object in the console automatically
+- console.log("The backpack object:", backpack) // comma tells browser to add a space
+
  #### 3.5 Accessing object properties
+
+- Two ways of accessing properties: dot notation and bracket notation
+
+EX: 03_06
+
+- Looking at dot notation first.
+- At bottom of script.js,
+
+```js
+console.log("The pocketNum value:", backpack.pocketNum)
+```
+
+- VSCode will automatically code hint the functions available to use
+
+- properties of nested objects
+
+```js
+console.log("Strap length L:", backpack.strapLength.left)
+```
+
+- Bracket notation: useful if you need more control or have non-standard names
+
+```js
+console.log("The pocketNum value:", backpack["pocketNum"])
+```
+
+EX: Pass property value as a variable (**variable variable**)
+
+```js
+var query = "pocketNum"
+console.log("The pocketNum value:", backpack[query])
+```
+
+- **#GOTCHA:** Variable variables can't be done with dot notation
+
+- 3rd use case for bracket notation: nothing prevents you or software from creating prop names that break the naming conventions. Bracket notation will allow you access non-standard names via bracket notation because property is enclosed in quotes.
+
  #### 3.6 Practice: Build a new object
+
+- Pause video to play around with your new-found knowledge
+
+EX: practice > 03_07
+
+##### Practice
+
+First practice assignment. Take objects within reach and turn them into a JS object.
+
+1. Give each object an identifiable name.
+2. Create properties to describe the objects and set their values.
+3. Find an object that has another object inside of it to create a nested object.
+
  #### 3.7 Object methods
  #### 3.8 Practice: Build a new method
  #### 3.9 Classes: Object blueprints
