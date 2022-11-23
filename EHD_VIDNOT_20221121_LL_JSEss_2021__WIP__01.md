@@ -370,10 +370,164 @@ They follow standards, invest in learning, use formatting and linting tools for 
 
 ### 2. Up and Running with JS  
  #### 2.0 JavaScript in an HTML document
+
+- Where does jS live? Where do you actually write the code?
+- Inline (using `style` tag)
+
+EX: 02_01
+
+- #BESTPRACTICE: Add script tag at end right before closing `body` tag
+- Anything inside the script tag will automatically be rendered as javascript
+- Can technically place script tag anywhere in the doc
+
+Why is script tag placed at bottom?
+
+- When browser encounters script tag all rendering stops
+- But, this is an **antipattern**: we have more better modern ways of loading JS
+
  #### 2.1 JavaScript as an external file
+
+- Writing inline jS is edge case: only applies to current doc and nowhere else
+- #BESTPRACTICE: Put script in its own file and reference the stylesheet in whatever file you want to use it in
+
+EX: 02_02
+
+- index.html references script.js with the `src` attribute
+- This error is noted in the course:
+
+<aside class="error">Uncaught TypeError: Cannot read property 'appendChild' of null at script.js:50</aside>
+
+- #SOLVED: This is caused by the script being run in the head before the page has been rendered
+
  #### 2.2 Modern JavaScript loading
+
+- Browser reads HTML top to bottom line by line and fetch and execute any elements it encounters
+
+<blockquote class="pullquote">
+When you open an HTML document in the browser, the browser will read that document line by line from the top down and fetch and execute any element it encounters as necessary.
+</blockquote>
+
+02_03
+
+-  Typical header: references to scripts and external stylesheets
+-  As browser encouters calls, stop renering, goes and gets external files, executes what external files tell it, then continues rendering
+-  The error in the console is a result of the JS referenced and run in the browser before the element it is acting upon is rendered.
+
+<blockquote>
+It can't do what the JavaScript is trying to do because elements don't yet exist.
+</blockquote>
+ 
+- The traditional solution: move script tag to end of doc so browser only encounters it when it has finished rendering the whole doc. Not really a solution though, actually a #HACK / #WORKAROUND
+- #GOTCHA: some JS should run at the beginning or while the doc is being loaded
+
+- New tools in JS to tightly control when and how JS is loaded: **async** and **defer** keywords
+
+
+##### Default Behavior
+
+- Browser stops rendering when JS is encountered. JS is executed before rendering continues. Often referred to a **content blocking** or **render blocking**.
+
+![](img/screen-course-linkedin--js-ess-2021-1.jpg)
+
+- Blocks rendering of content of page and can cause page to load slower
+- **Async**: tells browser to keep parsing HTML while JS is downloaded and only stop rendering once you have downloaded the JS
+
+##### async
+
+- Browser downloads JS in parallel while HTML renders. When JS is fully loaded, rendering stops while JS is executed.
+
+![](img/screen-course-linkedin--js-ess-2021-2.jpg)
+
+- Dramatically shortens time it takes for browser to execute everything and there is only a short render blocking issue
+- **defer**:
+
+##### defer
+
+- Browser downloads JS in parallel while HTML renders, then  defers execution of JS until HTML rendering is complete
+
+![](img/screen-course-linkedin--js-ess-2021-3.jpg)
+
+- At end of script tag in index.html add the `defer` keyword
+
+```html
+<script scr="script.js" defer></script>
+```
+
+- We are deferring the execution of the script until everything esle has been rendered
+- #BESTPRACTICE: async/defer should be the standard. Only use render blocking when you have a specific reason. Loading JS in the footer is now an **anti-pattern**.
+
+<blockquote>
+ async/defer should be the standard. Only use render blocking when you have a specific reason. Loading JS in the footer is now an anti-pattern.
+</blockquote>
+
+- From now on: load JS in the header then use async or defer to control when the js is loaded in the doc
+
  #### 2.3 JavaScript modules
+
+- As you start working with JS you will notice files get large and hard to work with, requires scrolling up and down. #SOLUTION: JS modules
+- JS modules: allow us to break pieces out of a JS file into separate files and then import back into the original file again
+
+02_04
+
+script.js
+
+- at top of script.js
+
+```javascript
+import backpack from "./backpack.js"
+```
+
+- constant called `backpack` is what is being imported from backpack.js
+- at bottom of backpack.js
+
+```
+export default backpack
+```
+
+- export tells browser that the entity (const) can be used by any other file it is imported into
+
+- To get this work in HTML, tell browser the files are modules (auto deferred)
+- Modules are an advanced and new feature in modern JS. But, is standard practice with React and Vue
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module Demo</title>
+    <script type="module" src="backpack.js"></script>
+    <script type="module" src="script.js"></script>
+  </head>
+  <body></body>
+</html>
+```
+
+#GOTCHA: Can't call backpack object in console, because it is only scoped to the file, not to the browser
+
+- As of 2021, modules are cutting edge JS
+
  #### 2.4 Chapter Quiz
+
+##### When does the browser execute JavaScript?
+
+By default: When the script is encountered. If the script is set to "async", when the script is fully loaded. If the script is set to "defer", when the entire HTML page is rendered.
+
+##### What is the correct markup for adding an external JavaScript file to an HTML document?
+
+<script src="javascript.js" async></script>
+
+While `<script src="javascript.js"></script>` is technically correct, it is recommended to always async or defer your script unless you have a specific reason for the script to cause render blocking.
+
+##### What happens when you defer JavaScript?
+
+The browser loads the JavaScript asynchronously when it is encountered, then waits until all HTML is rendered before executing the script.
+
+##### JavaScript modules are heavily used in frameworks like React and Vue. What is the advantage of using modules?
+
+Modules enable modularization of code where individual functions, components, data objects, and other parts can be separated into individual files.
+
 ### 3. Objects  
  #### 3.0 Objects: A practical introduction
  #### 3.1 JavaScript objects: The code version

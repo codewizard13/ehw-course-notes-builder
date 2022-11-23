@@ -874,10 +874,156 @@ code {
 <h2 class="error">BOOKMARK</h2>
 <h3 id="2-up-and-running-with-js">2. Up and Running with JS</h3>
 <h4 id="20-javascript-in-an-html-document">2.0 JavaScript in an HTML document</h4>
+<ul>
+<li>Where does jS live? Where do you actually write the code?</li>
+<li>Inline (using <code>style</code> tag)</li>
+</ul>
+<p>EX: 02_01</p>
+<ul>
+<li>#BESTPRACTICE: Add script tag at end right before closing <code>body</code> tag</li>
+<li>Anything inside the script tag will automatically be rendered as javascript</li>
+<li>Can technically place script tag anywhere in the doc</li>
+</ul>
+<p>Why is script tag placed at bottom?</p>
+<ul>
+<li>When browser encounters script tag all rendering stops</li>
+<li>But, this is an <strong>antipattern</strong>: we have more better modern ways of loading JS</li>
+</ul>
 <h4 id="21-javascript-as-an-external-file">2.1 JavaScript as an external file</h4>
+<ul>
+<li>Writing inline jS is edge case: only applies to current doc and nowhere else</li>
+<li>#BESTPRACTICE: Put script in its own file and reference the stylesheet in whatever file you want to use it in</li>
+</ul>
+<p>EX: 02_02</p>
+<ul>
+<li>index.html references script.js with the <code>src</code> attribute</li>
+<li>This error is noted in the course:</li>
+</ul>
+<aside class="error">Uncaught TypeError: Cannot read property 'appendChild' of null at script.js:50</aside>
+<ul>
+<li>#SOLVED: This is caused by the script being run in the head before the page has been rendered</li>
+</ul>
 <h4 id="22-modern-javascript-loading">2.2 Modern JavaScript loading</h4>
+<ul>
+<li>Browser reads HTML top to bottom line by line and fetch and execute any elements it encounters</li>
+</ul>
+<blockquote class="pullquote">
+When you open an HTML document in the browser, the browser will read that document line by line from the top down and fetch and execute any element it encounters as necessary.
+</blockquote>
+<p>02_03</p>
+<ul>
+<li>Typical header: references to scripts and external stylesheets</li>
+<li>As browser encouters calls, stop renering, goes and gets external files, executes what external files tell it, then continues rendering</li>
+<li>The error in the console is a result of the JS referenced and run in the browser before the element it is acting upon is rendered.</li>
+</ul>
+<blockquote>
+It can't do what the JavaScript is trying to do because elements don't yet exist.
+</blockquote>
+<ul>
+<li>
+<p>The traditional solution: move script tag to end of doc so browser only encounters it when it has finished rendering the whole doc. Not really a solution though, actually a #HACK / #WORKAROUND</p>
+</li>
+<li>
+<p>#GOTCHA: some JS should run at the beginning or while the doc is being loaded</p>
+</li>
+<li>
+<p>New tools in JS to tightly control when and how JS is loaded: <strong>async</strong> and <strong>defer</strong> keywords</p>
+</li>
+</ul>
+<h5 id="default-behavior">Default Behavior</h5>
+<ul>
+<li>Browser stops rendering when JS is encountered. JS is executed before rendering continues. Often referred to a <strong>content blocking</strong> or <strong>render blocking</strong>.</li>
+</ul>
+<p><img src="img/screen-course-linkedin--js-ess-2021-1.jpg" alt=""></p>
+<ul>
+<li>Blocks rendering of content of page and can cause page to load slower</li>
+<li><strong>Async</strong>: tells browser to keep parsing HTML while JS is downloaded and only stop rendering once you have downloaded the JS</li>
+</ul>
+<h5 id="async">async</h5>
+<ul>
+<li>Browser downloads JS in parallel while HTML renders. When JS is fully loaded, rendering stops while JS is executed.</li>
+</ul>
+<p><img src="img/screen-course-linkedin--js-ess-2021-2.jpg" alt=""></p>
+<ul>
+<li>Dramatically shortens time it takes for browser to execute everything and there is only a short render blocking issue</li>
+<li><strong>defer</strong>:</li>
+</ul>
+<h5 id="defer">defer</h5>
+<ul>
+<li>Browser downloads JS in parallel while HTML renders, then  defers execution of JS until HTML rendering is complete</li>
+</ul>
+<p><img src="img/screen-course-linkedin--js-ess-2021-3.jpg" alt=""></p>
+<ul>
+<li>At end of script tag in index.html add the <code>defer</code> keyword</li>
+</ul>
+<pre class="hljs"><code><div><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">scr</span>=<span class="hljs-string">"script.js"</span> <span class="hljs-attr">defer</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</div></code></pre>
+<ul>
+<li>We are deferring the execution of the script until everything esle has been rendered</li>
+<li>#BESTPRACTICE: async/defer should be the standard. Only use render blocking when you have a specific reason. Loading JS in the footer is now an <strong>anti-pattern</strong>.</li>
+</ul>
+<blockquote>
+ async/defer should be the standard. Only use render blocking when you have a specific reason. Loading JS in the footer is now an anti-pattern.
+</blockquote>
+<ul>
+<li>From now on: load JS in the header then use async or defer to control when the js is loaded in the doc</li>
+</ul>
 <h4 id="23-javascript-modules">2.3 JavaScript modules</h4>
+<ul>
+<li>As you start working with JS you will notice files get large and hard to work with, requires scrolling up and down. #SOLUTION: JS modules</li>
+<li>JS modules: allow us to break pieces out of a JS file into separate files and then import back into the original file again</li>
+</ul>
+<p>02_04</p>
+<p>script.js</p>
+<ul>
+<li>at top of script.js</li>
+</ul>
+<pre class="hljs"><code><div><span class="hljs-keyword">import</span> backpack <span class="hljs-keyword">from</span> <span class="hljs-string">"./backpack.js"</span>
+</div></code></pre>
+<ul>
+<li>constant called <code>backpack</code> is what is being imported from backpack.js</li>
+<li>at bottom of backpack.js</li>
+</ul>
+<pre class="hljs"><code><div>export default backpack
+</div></code></pre>
+<ul>
+<li>
+<p>export tells browser that the entity (const) can be used by any other file it is imported into</p>
+</li>
+<li>
+<p>To get this work in HTML, tell browser the files are modules (auto deferred)</p>
+</li>
+<li>
+<p>Modules are an advanced and new feature in modern JS. But, is standard practice with React and Vue</p>
+</li>
+</ul>
+<pre class="hljs"><code><div><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"X-UA-Compatible"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"IE=edge"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1.0"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Module Demo<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"module"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"backpack.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"module"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"script.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</div></code></pre>
+<p>#GOTCHA: Can't call backpack object in console, because it is only scoped to the file, not to the browser</p>
+<ul>
+<li>As of 2021, modules are cutting edge JS</li>
+</ul>
 <h4 id="24-chapter-quiz">2.4 Chapter Quiz</h4>
+<h5 id="when-does-the-browser-execute-javascript">When does the browser execute JavaScript?</h5>
+<p>By default: When the script is encountered. If the script is set to &quot;async&quot;, when the script is fully loaded. If the script is set to &quot;defer&quot;, when the entire HTML page is rendered.</p>
+<h5 id="what-is-the-correct-markup-for-adding-an-external-javascript-file-to-an-html-document">What is the correct markup for adding an external JavaScript file to an HTML document?</h5>
+<script src="javascript.js" async></script>
+<p>While <code>&lt;script src=&quot;javascript.js&quot;&gt;&lt;/script&gt;</code> is technically correct, it is recommended to always async or defer your script unless you have a specific reason for the script to cause render blocking.</p>
+<h5 id="what-happens-when-you-defer-javascript">What happens when you defer JavaScript?</h5>
+<p>The browser loads the JavaScript asynchronously when it is encountered, then waits until all HTML is rendered before executing the script.</p>
+<h5 id="javascript-modules-are-heavily-used-in-frameworks-like-react-and-vue-what-is-the-advantage-of-using-modules">JavaScript modules are heavily used in frameworks like React and Vue. What is the advantage of using modules?</h5>
+<p>Modules enable modularization of code where individual functions, components, data objects, and other parts can be separated into individual files.</p>
 <h3 id="3-objects">3. Objects</h3>
 <h4 id="30-objects-a-practical-introduction">3.0 Objects: A practical introduction</h4>
 <h4 id="31-javascript-objects-the-code-version">3.1 JavaScript objects: The code version</h4>
