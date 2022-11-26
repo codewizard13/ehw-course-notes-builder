@@ -1,17 +1,3 @@
-<style>
-  code {
-    background: #f7fff2;
-    margin: 3px;
-    padding: 3px;
-    border-radius: 6px;
-    border: solid gray 1px;
-    line-height: calc(line-height + 3);
-    font-size: 0.8em !important;
-    line-height: 1.2;
-    display: inline-block;
-  }
-</style>
-
 <div class="ehw-wrapper">
   <div class="ehw-body notes">
     <div class="course-title">JavaScript Essential Training (2021)</div>
@@ -124,17 +110,9 @@
     <!-- END TABLE -->
     <h2 id="description">Description:</h2>
     <div>
-      JavaScript is a scripting language of the web. As the web evolves from a
-      static to a dynamic environment, technology focus is shifting from static
-      markup and styling—frequently handled by content management systems or
-      automated scripts—to dynamic interfaces and advanced interaction. Once
-      seen as optional, JavaScript is now becoming an integral part of the web,
-      infusing every layer with its script. Through practical examples and
-      mini-projects, this course helps you build your understanding of
-      JavaScript piece by piece, from core principles like variables, data
-      types, conditionals, and functions through advanced topics including
-      loops, and DOM scripting. Along the way, instructor Morten Rand-Hendriksen
-      provides challenges that allow you to put your new skills to the test.
+      <p>JavaScript is a scripting language of the web. As the web evolves from a static to a dynamic environment, technology focus is shifting from static markup and styling—frequently handled by content management systems or automated scripts—to dynamic interfaces and advanced interaction. Once seen as optional, JavaScript is now becoming an integral part of the web, infusing every layer with its script.</p>
+
+      <p>Through practical examples and mini-projects, this course helps you build your understanding of JavaScript piece by piece, from core principles like variables, data types, conditionals, and functions through advanced topics including loops, and DOM scripting. Along the way, instructor Morten Rand-Hendriksen provides challenges that allow you to put your new skills to the test.</p>
     </div>
     <h2 id="learning-objectives">Learning objectives</h2>
     <ul>
@@ -362,11 +340,7 @@
       <li>Code comments: green</li>
       <li><strong>JS Doc:</strong> Verbose comment:/** [ENTER]:</li>
     </ul>
-    <pre
-      class="EnlighterJSRAW"
-      data-enlighter-language="js"
-      data-enlighter-theme="beyond"
-    >
+    <pre class="EnlighterJSRAW" data-enlighter-language="js">
 /**
    * function updateBackpack()
    * Outputs HTML
@@ -578,11 +552,7 @@
         At end of script tag in index.html add the <code>defer</code> keyword
       </li>
     </ul>
-    <pre
-      class="EnlighterJSRAW"
-      data-enlighter-language="html"
-      data-enlighter-theme="beyond"
-    >
+    <pre class="EnlighterJSRAW" data-enlighter-language="html">
 &lt;script scr="script.js" defer&gt;&lt;/script&gt;</pre
     >
     &nbsp;
@@ -622,11 +592,7 @@
     <ul>
       <li>at top of script.js</li>
     </ul>
-    <pre
-      class="EnlighterJSRAW"
-      data-enlighter-language="js"
-      data-enlighter-theme="beyond"
-    >
+    <pre class="EnlighterJSRAW" data-enlighter-language="js">
 import backpack from "./backpack.js"</pre
     >
     &nbsp;
@@ -637,11 +603,7 @@ import backpack from "./backpack.js"</pre
       </li>
       <li>at bottom of backpack.js</li>
     </ul>
-    <pre
-      class="EnlighterJSRAW"
-      data-enlighter-language="js"
-      data-enlighter-theme="beyond"
-    >
+    <pre class="EnlighterJSRAW" data-enlighter-language="js">
 export default backpack</pre
     >
     &nbsp;
@@ -659,11 +621,7 @@ export default backpack</pre
         practice with React and Vue
       </li>
     </ul>
-    <pre
-      class="EnlighterJSRAW"
-      data-enlighter-language="html"
-      data-enlighter-theme="beyond"
-    >
+    <pre class="EnlighterJSRAW" data-enlighter-language="html">
 &lt;!DOCTYPE html&gt;
   &lt;html lang="en"&gt;
     &lt;head&gt;
@@ -872,12 +830,8 @@ const backpack = {
     </ul>
     EX: 03_05
     <ul>
-      <li>Type in console:</li>
+      <li>Type in console: <code>backpack</code></li>
     </ul>
-    <!-- CODE -->
-    <code></code>
-    <div>backpack</div>
-    <!-- CODE -->
     <ul>
       <li>Click arrows on object to view properties</li>
     </ul>
@@ -903,54 +857,36 @@ const backpack = {
       <li>Looking at dot notation first.</li>
       <li>At bottom of script.js,</li>
     </ul>
-    <!-- CODE -->
-    <code></code>
-    <div>
-      <span class="hljs-built_in">console</span>.log(
-      <span class="hljs-string">"The pocketNum value:"</span>,
-      backpack.pocketNum)
-    </div>
-    <!-- CODE -->
+    <pre class="EnlighterJSRAW" data-enlighter-language="generic">
+console.log("The pocketNum value:", backpack.pocketNum)</pre
+    >
+    &nbsp;
     <ul>
       <li>
         VSCode will automatically code hint the functions available to use
       </li>
       <li>properties of nested objects</li>
     </ul>
-    <!-- CODE -->
-    <code></code>
-    <div>
-      <span class="hljs-built_in">console</span>.log(
-      <span class="hljs-string">"Strap length L:"</span>,
-      backpack.strapLength.left)
-    </div>
-    <!-- CODE -->
+    <pre class="EnlighterJSRAW" data-enlighter-language="generic">
+console.log("Strap length L:", backpack.strapLength.left)</pre
+    >
+    &nbsp;
     <ul>
       <li>
         Bracket notation: useful if you need more control or have non-standard
         names
       </li>
     </ul>
-    <!-- CODE -->
-    <code></code>
-    <div>
-      <span class="hljs-built_in">console</span>.log(
-      <span class="hljs-string">"The pocketNum value:"</span>, backpack[
-      <span class="hljs-string">"pocketNum"</span>])
-    </div>
-    <!-- CODE -->
-
-    EX: Pass property value as a variable ( <strong>variable variable</strong>)
-
-    <!-- CODE -->
-    <code></code>
-    <div>
-      <span class="hljs-keyword">var</span> query =
-      <span class="hljs-string">"pocketNum"</span>
-      <span class="hljs-built_in">console</span>.log(
-      <span class="hljs-string">"The pocketNum value:"</span>, backpack[query])
-    </div>
-    <!-- CODE -->
+    <pre class="EnlighterJSRAW" data-enlighter-language="generic">
+console.log("The pocketNum value:", backpack["pocketNum"])</pre
+    >
+    &nbsp; EX: Pass property value as a variable (
+    <strong>variable variable</strong>)
+    <pre class="EnlighterJSRAW" data-enlighter-language="generic">
+var query = "pocketNum"
+  console.log("The pocketNum value:", backpack[query])</pre
+    >
+    &nbsp;
     <ul>
       <li>
         <strong>#GOTCHA:</strong> Variable variables can't be done with dot
