@@ -16,7 +16,9 @@ require_once('app.php');
 
     <?php 
     
+    $viewPath = APP_PATH . '/views/view-header.php';
 
+    echo "<h3 class='correct'>VIEW TEST: $viewPath </h3>";
 
     echo '<h3>APP_PATH = '. APP_PATH . '</h3>';
     
@@ -24,7 +26,7 @@ require_once('app.php');
 
     echo '<h3 class="error">PATH TEST: '. $testPath . '</h3>';
 
-    include $testPath;
+    include $viewPath;
     
     ?>
 
