@@ -74,3 +74,13 @@
 .ehw-body .logo {
   width: 100px;
 }
+
+
+
+.bookmark-link {
+    background: orange !important;
+    padding: .4rem 1rem;
+    border: solid 1px brown;
+    color: white;
+    font-weight: 700;
+}
