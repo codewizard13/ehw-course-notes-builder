@@ -1,7 +1,5 @@
 /* ---------- TABLE: BASE ------------ */
-.ehw-body.notes {
-  /* Force any table with last col 100% to auto */
-}
+
 .ehw-body.notes table {
   border: solid 2px brown;
   margin: 0;
