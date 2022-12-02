@@ -19,6 +19,9 @@ Here is my tentative plan for auto-generating the correct blog post.
 3. Keep code snippets in their own files (numbered according to chapters)
 
 
+- Export file from md as html
+- Remove all classes from HTML (in browser?)
+
 
 
 ---
