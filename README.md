@@ -14,10 +14,13 @@ This version will focus on setting up an "assembly line" template to help automa
 
 Here is my tentative plan for auto-generating the correct blog post.
 
+## Overview
+
 1. Keep different sections in different PHP includes files
 2. Use the actual CSS from the theme
 3. Keep code snippets in their own files (numbered according to chapters)
 
+## Steps
 
 - Export file from md as html
 - Remove all classes from HTML (in browser?)
