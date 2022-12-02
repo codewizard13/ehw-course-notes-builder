@@ -7,12 +7,21 @@
     <title>EHD_VIDNOT_20221121_LL_JSEss_2021__WIP__01.md</title>
     <link rel="stylesheet" href="./css/style.css"></script>
   </head>
-  <body>
+  <body class="ehw-body notes">
     <h1>EHD_VIDNOT_20221121_LL_JSEss_2021__WIP__01.md</h1>
 
     <?php 
     
-    define('APP_PATH', dirname(__FILE__) . '/../');
+    // define('APP_PATH', dirname(__FILE__) . '/../');
+    define('APP_PATH', dirname(__FILE__));
+
+    echo '<h3>APP_PATH = '. APP_PATH . '</h3>';
+    
+    $testPath = APP_PATH . '/sb/junk2.htm';
+
+    echo '<h3 class="error">PATH TEST: '. $testPath . '</h3>';
+
+    include $testPath;
     
     ?>
 
