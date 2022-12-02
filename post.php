@@ -14,23 +14,18 @@ require_once('app.php');
   <body class="ehw-body notes">
     <h1>EHD_VIDNOT_20221121_LL_JSEss_2021__WIP__01.md</h1>
 
-    <?php 
+<?php 
+
+// include_once(APP_PATH . '/views/view-header.php');
+include_once(VIEW_PATH . '/view-header.php');
+
+include_once(VIEW_PATH . '/view--course-info.php');
+
+include_once(VIEW_PATH . '/view--course-details.php');
+
+?>
     
-    $viewPath = APP_PATH . '/views/view-header.php';
 
-    echo "<h3 class='correct'>VIEW TEST: $viewPath </h3>";
-
-    echo '<h3>APP_PATH = '. APP_PATH . '</h3>';
-    
-    $testPath = APP_PATH . '/sb/junk2.htm';
-
-    echo '<h3 class="error">PATH TEST: '. $testPath . '</h3>';
-
-    include $viewPath;
-    
-    ?>
-
-    <?php include('./post-wip/post-wip-course-js-ess-03.htm') ?>
 
   </body>
 </html>

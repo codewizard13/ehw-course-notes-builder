@@ -1,1 +1,7 @@
-<h1>TESTING <?php echo "ERIC" ?> </h1>
+<h1 class="correct"><span style="color: initial">THIS FILE: </span><?php echo basename(__FILE__) ?></h1>
+
+<?php
+include_once(VIEW_PATH . '/view--course-info.php');
+include_once(VIEW_PATH . '/view--course-details.php');
+
+
