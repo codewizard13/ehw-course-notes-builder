@@ -19,9 +19,7 @@ require_once('app.php');
   <div class="ehw-body notes">
     <div class="course-title">JavaScript Essential Training (2021)</div>
 
-    <h1 id="course-notes">COURSE NOTES</h1>
     <a class="bookmark-link" href="#bookmark">BOOKMARK</a>
-    <h3 id="span-class%22course-title%22javascript-essential-training-2021span"><span class="course-title">JavaScript Essential Training (2021)</span></h3>
 
 
     <?php

@@ -104,6 +104,35 @@ code > pre {
 }
 
 
+.code-filename {
+    background: beige;
+    min-height: 1rem;
+    display: inline-block;
+    border: solid black 2px;
+    padding: .3rem;
+    /* background: black; */
+    color: black;
+    font-weight: 500;
+    /* padding: 1rem; */
+    padding-right: 1rem;
+    border-radius: 0 5px 5px  0;
+    border-left: none !important;
+    padding-left: 0;
+}
+
+.code-filename::before {
+    font-family: FontAwesome;
+    content: '\f15c';
+    padding: .3rem .6rem;
+    background: black;
+    color: white;
+    margin: 0;
+    padding: .5rem .7rem;
+    margin-right: .8rem;
+}
+
+
+
 /* ENLIGHTER CODE HIGHLIGHTER PLUGIN
 _________________________________________ */
 

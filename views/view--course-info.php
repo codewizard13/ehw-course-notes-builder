@@ -1,7 +1,7 @@
 <!-- <h1 class="correct"><span style="color: initial">THIS FILE: </span><?php echo basename(__FILE__) ?></h1> -->
 
 <h2 id="course-info">Course Info</h2>
-<!-- TABLE -->
+
 <table id="course-info-table" class="table--2-col">
   <thead>
     <tr>
@@ -39,3 +39,5 @@
     </tr>
   </tbody>
 </table>
+
+<div class="code-filename">skdjf</div>
