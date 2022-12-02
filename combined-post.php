@@ -1,3 +1,7 @@
+<?php
+require_once('app.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -12,8 +16,7 @@
 
     <?php 
     
-    // define('APP_PATH', dirname(__FILE__) . '/../');
-    define('APP_PATH', dirname(__FILE__));
+
 
     echo '<h3>APP_PATH = '. APP_PATH . '</h3>';
     
