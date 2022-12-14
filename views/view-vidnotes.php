@@ -684,7 +684,7 @@ each other)</li>
 curly brackets defines all properties and sets values from params</li>
  	<li>add class methods after constructor method</li>
 </ul>
-<strong>Backpack.js</strong>
+<div class="code-filename">Backpack.js</div	>
 
 <!-- CODE -->
 <code></code>
@@ -715,7 +715,8 @@ lidStatus } newStrapLength(lengthLeft, lengthRight) {
 <ul>
  	<li>Create a new variable like this,</li>
 </ul>
-<strong>script.js</strong>
+
+<div class="code-filename">script.js</div>
 
 <!-- CODE -->
 <code></code>
@@ -750,7 +751,8 @@ https, chrome-untrusted.</aside>
  	<li>Can you use <strong>Five Server</strong> VSCode extension in 2022</li>
  	<li>Finally, index.htm is the final piece,</li>
 </ul>
-<strong>index.html</strong>
+
+<div class="code-filename">index.html</div>
 
 <!-- CODE -->
 <code></code>
@@ -821,7 +823,10 @@ function</li>
  	<li>no explicit "constructor" keywords</li>
  	<li>methods live inside the constructor area and use "this"</li>
 </ul>
-<strong>script.js</strong> ( <em>with object constructor</em>)
+
+<div class="code-filename">script.js</div>
+
+( <em>with object constructor</em>)
 
 <!-- CODE -->
 <code></code>
@@ -891,8 +896,8 @@ one-by-one</li>
 </ul>
 <h4 id="my-practice-results">My Practice Results:</h4>
 <h3 id="version-1">Version 1</h3>
-<strong>index.htm</strong>
 
+<div class="code-filename">index.htm</div>
 <!-- CODE -->
 <code></code>
 <div><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;
@@ -951,7 +956,7 @@ one-by-one</li>
 </span> </span></div>
 <!-- CODE -->
 
-<strong>Rag.js</strong>
+<div class="code-filename">Rag.js</div>
 
 <!-- CODE -->
 <code></code>
@@ -997,7 +1002,7 @@ width ) { <span class="hljs-keyword">this</span>.name = name
 <span class="hljs-keyword">default</span> Rag </span></span></span></span></span></span></div>
 <!-- CODE -->
 
-<strong>script.js</strong>
+<div class="code-filename">script.js</div>
 
 <!-- CODE -->
 <code></code>
@@ -1052,7 +1057,8 @@ The cool thing about this practice was creating the
 <hr />
 
 <h3 id="version-2">Version 2</h3>
-<strong>index.htm</strong>
+
+<div class="code-filename">index.htm</div>
 
 <!-- CODE -->
 <code></code>
@@ -1120,7 +1126,9 @@ The cool thing about this practice was creating the
 </span> </span></div>
 <!-- CODE -->
 
-<strong>Basket.js</strong> Basket is class is made to contain other class
+<div class="code-filename">Basket.js</div>
+
+Basket is class is made to contain other class
 objects.
 
 <!-- CODE -->
@@ -1163,7 +1171,7 @@ calcArea() { <span class="hljs-keyword">let</span> area =
 <span class="hljs-keyword">default</span> Basket </span></span></span></div>
 <!-- CODE -->
 
-<strong>script.js</strong>
+<div class="code-filename">script.js</div>
 
 <!-- CODE -->
 <code></code>
