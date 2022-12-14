@@ -148,3 +148,21 @@ section.ehw-author-info > div {
 section.ehw-author-info > div img {
   width: 100%;
 }
+
+/* _________TABLE OF CONTENTS (TOC) ________ */
+
+.accordion.toc {
+        background: lightgray;
+        padding: 1rem;
+        max-width: 300px;
+        font-size: .6rem;
+        border-radius: 6px;
+}
+.accordion-hidden > h3 {
+    font-size: .8rem;
+    font-weight: bold;
+    line-height: .8;
+}
+.accordion-hidden > h4 {
+        display: none;
+}

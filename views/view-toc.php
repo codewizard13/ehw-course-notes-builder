@@ -1,13 +1,13 @@
-<h1 class="correct"><span style="color: initial">THIS FILE: </span><?php echo basename(__FILE__) ?></h1>
+<!-- <h1 class="correct"><span style="color: initial">THIS FILE: </span><?php echo basename(__FILE__) ?></h1> -->
 
 <h2 id="toc">TOC</h2>
-<h2 class="error">TABLE OF CONTENTS GOES HERE</h2>
 
-<section class="">
-<h3>0. Introduction</h3>
+<section class="accordion toc accordion-hidden">
+	
+<h3><a href="#0-introduction">0. Introduction</a></h3>
 	<h4>0.0 JavaScript: The soil from which the modern web grows</h4>
 	<h4>0.1 How to use the exercise files</h4>
-<h3>1. JavaScript: A Brief Introduction</h3>
+<h3><a href="#1-javascript-a-brief-introduction">1. JavaScript: A Brief Introduction</a></h3>
 	<h4>1.0 JavaScript: First contact</h4>
 	<h4>1.1 Navigating the JS landscape</h4>
 	<h4>1.2 Tools for working with JavaScript</h4>
@@ -16,13 +16,13 @@
 	<h4>1.5 JavaScript language basics</h4>
 	<h4>1.6 Learning JavaScript backward</h4>
 	<h4>1.7 Chapter Quiz</h4>
-<h3>2. Up and Running with JS</h3>
+<h3><a href="#2-up-and-running-with-js">2. Up and Running with JS</a></h3>
 	<h4>2.0 JavaScript in an HTML document</h4>
 	<h4>2.1 JavaScript as an external file</h4>
 	<h4>2.2 Modern JavaScript loading</h4>
 	<h4>2.3 JavaScript modules</h4>
 	<h4>2.4 Chapter Quiz</h4>
-<h3>3. Objects</h3>
+<h3><a href="#3-objects">3. Objects</a></h3>
 	<h4>3.0 Objects: A practical introduction</h4>
 	<h4>3.1 JavaScript objects: The code version</h4>
 	<h4>3.2 Object containers</h4>
