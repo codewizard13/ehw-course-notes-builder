@@ -4,9 +4,13 @@ Eric Hepperle
 
 README:
 
+
 Cloned from origial from 2022-11-21
 
 This version will focus on setting up an "assembly line" template to help automate the creation of well formatted, semantic blog posts for course notes posts.
+
+![](img/ehd-screen-course-notes--post-code-highlight-styles-01.jpg)
+
 
 ---
 
