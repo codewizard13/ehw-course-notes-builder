@@ -1,8 +1,12 @@
-toggleLid: function (lidStatus) </span > { this.lidOpen = lidStatus }
+toggleLid: function (lidStatus) {
+  this.lidOpen = lidStatus
+}
 
-///
+// Shorthand: harder to read
 
-toggleLid(lidStatus) { this.lidOpen = lidStatus }
+toggleLid(lidStatus) {
+  this.lidOpen = lidStatus
+}
 
 ///
 
