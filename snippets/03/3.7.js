@@ -1,0 +1,17 @@
+toggleLid: function (lidStatus) </span > { this.lidOpen = lidStatus }
+
+///
+
+toggleLid(lidStatus) { this.lidOpen = lidStatus }
+
+///
+
+backpack.lidOpen // false
+backpack.toggleLid(true) // undefined 
+backpack.lidOpen // true
+
+///
+
+console.log("Left before:", backpack.strapLength.left) // 26
+backpack.newStrapLength(10, 15)
+console.log("Left after:", backpack.strapLength.left) // 10
